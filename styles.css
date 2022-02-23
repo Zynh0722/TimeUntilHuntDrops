@@ -1,5 +1,10 @@
+html, body, #app {
+  min-height: 100vh;
+  margin: 0;
+}
+
 #app {
-  background-color: #a639e6;
+  background-color: #6f36bc;
 }
 
 .centerBox {
@@ -10,7 +15,7 @@
   padding: 1.5rem;
   border-radius: 1rem;
   width: fit-content;
-  background-color: darkgrey;
+  background-color: #f3effe;
 }
 
 .topBox {
