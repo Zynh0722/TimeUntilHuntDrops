@@ -1,3 +1,19 @@
+function timeToGo(s) {
+  var now = new Date;
+  var utc_timestamp = new Date(Date.UTC(now.getFullYear(),now.getMonth(), now.getDate() ,
+      now.getHours(), now.getMinutes(), now.getSeconds(), now.getMilliseconds()));
+  var diff = new Date(s.getTime() - utc_timestamp.getTime());
+
+
+  out = '';
+  out += (diff.getHours()) + " hours, ";
+  out += diff.getMinutes() + " minutes, "
+  out += diff.getSeconds() + " seconds"
+
+
+  return out;
+}
+
 $(document).ready(function(){
   var $app = $('#app');
 
